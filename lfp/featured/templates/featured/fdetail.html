@@ -1,0 +1,12 @@
+<h1>Yeahhhhhhhh</h1>
+
+<h1>{{ detailfeature.name }}</h1>
+
+<h1>{{ detailfeature.description }}</h1>
+<h1>{{ detailfeature.route }}</h1>
+
+<ul>
+{% for choice in detailplaces.detailplaces_set.all %}
+    <li>{{ choice.name }} -- {{ choice.description }} vote {{ choice.route }}</li>
+{% endfor %}
+</ul>
